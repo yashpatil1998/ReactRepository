@@ -10,10 +10,14 @@ import Hello from './components/Hello'
 
 import Message from './components/Message'
 import Counter from './components/Counter';
+import FunctionClick from './components/FunctionClick';
+import ClassClick from './components/ClassClick';
 
 function App() {
   return (
     <div className="App">
+      <FunctionClick />
+      <ClassClick />
       {/* <Counter /> */}
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -34,9 +38,9 @@ function App() {
       {/* <Greet name = "DB" age = "20">
         <p>This is child prop</p>
       </Greet> */}
-      <Greet name = "Y" age = "21"/>
+      {/* <Greet name = "Y" age = "21"/> */}
       {/* <Greet name = "P" age = "22"/> */}
-      <Welcome name = "DB" age = "150"/>
+      {/* <Welcome name = "DB" age = "150"/> */}
       {/* <Welcome name = "Y" age = "21"/>
       <Welcome name = "P" age = "22"/> */}
       {/* <Message /> */}
