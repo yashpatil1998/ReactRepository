@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       HTTP Hanlding using React and Axios
-      {/* <PostList /> */}
+      <PostList />
       <PostForm />
     </div>
   );

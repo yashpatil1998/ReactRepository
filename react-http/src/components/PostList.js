@@ -13,7 +13,8 @@ class PostList extends Component {
     }
 
     componentDidMount() {
-        axios.get('https://jsonplaceholder.typicode.com/posts')
+        // axios.get('https://jsonplaceholder.typicode.com/posts')
+        axios.get('http://localhost:8080/topics')
             .then(response => {
                 console.log(response)
                 this.setState({ posts: response.data })
@@ -25,7 +26,7 @@ class PostList extends Component {
 
 
     render() {
-        const sList = this.state.posts.map(post => <div key={post.id}>{post.title}</div>)
+    const sList = this.state.posts.map(post => <div key={post.id}>ID : {post.id} Name : {post.name} Description : {post.description}</div>)
         return (
             <div>
                 List of posts
