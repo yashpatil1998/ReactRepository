@@ -8,7 +8,9 @@ function App() {
   return (
     <div className="App">
       HTTP Hanlding using React and Axios
+      <h3>PostList</h3>
       <PostList />
+      <h3>PostForm</h3>
       <PostForm />
     </div>
   );
