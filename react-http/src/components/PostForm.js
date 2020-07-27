@@ -21,8 +21,8 @@ class PostForm extends Component {
     submitHandler = (event) => {
         event.preventDefault()
         console.log(this.state)
-        // axios.post('https://jsonplaceholder.typicode.com/posts', this.state)
-        axios.post('http://localhost:8080/topics', this.state)
+        axios.post('https://jsonplaceholder.typicode.com/posts', this.state)
+        // axios.post('http://localhost:8080/topics', this.state)
             .then(response => {
                 console.log(response)
             })
